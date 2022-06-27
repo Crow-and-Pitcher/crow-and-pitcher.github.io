@@ -41,14 +41,13 @@ main, section {
 }
 
 main div, section div {
-  width: 50vw;
-  min-width: 320px;
   padding: 20px;
   text-align: center;
   margin: 5px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.2);
 }
+
 
 main div {
   background-color: rgba(183, 224, 255, 0.5);
@@ -70,7 +69,7 @@ main ol {
   display: flex;
   margin: 0 auto;
   display: block;
-  min-width: 350px;
+  min-width: 320px;
 }
 
 main ol li {
