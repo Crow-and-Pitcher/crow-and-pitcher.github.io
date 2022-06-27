@@ -60,7 +60,7 @@ section {
 }
 
 section div {
-  width: 90vw;
+  min-width: 300px;
   margin: 10px auto;
 }
 
