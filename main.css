@@ -26,8 +26,14 @@ header {
 }
 
 main {
-  height: 300px;
   display: flex;
+}
+
+main img {
+  display: block;
+  width: 100px;
+  float: left;
+  box-shadow: #111 1px 1px 1px;
 }
 
 main, section {
@@ -57,6 +63,27 @@ section {
 section div {
   width: 90vw;
   margin: 10px auto;
+}
+
+main ol {
+  list-style-type: none;
+  display: flex;
+  margin: 0 auto;
+  display: block;
+  min-width: 350px;
+}
+
+main ol li {
+  padding: 10px;
+  text-align: center;
+}
+
+main div p.last {
+  margin: 20px;
+  padding-top: 20px;
+  display: block;
+  clear: both;
+  width: 90%;
 }
 
 #intro {
@@ -129,7 +156,7 @@ footer {
   text-align: right;
 }
 
-@media all and (max-width: 740px) {
+@media all and (max-width: 760px) {
   main {
     flex-direction: column;
   }
