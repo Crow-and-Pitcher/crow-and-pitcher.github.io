@@ -86,6 +86,10 @@ main div p.last {
   width: 90%;
 }
 
+main b {
+  font-size: 1rem;
+}
+
 #intro {
   text-align: center;
   margin-bottom: 120px;
@@ -159,6 +163,10 @@ footer {
 @media all and (max-width: 760px) {
   main {
     flex-direction: column;
+  }
+
+  main img {
+    width: 70px;
   }
 
   main div {
