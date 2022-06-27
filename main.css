@@ -52,6 +52,7 @@ main div, section div {
 main div {
   background-color: rgba(183, 224, 255, 0.5);
   padding-bottom: 20px;
+  width: 50vw;
 }
 
 section {
@@ -82,7 +83,6 @@ main div p.last {
   padding-top: 20px;
   display: block;
   clear: both;
-  width: 90%;
 }
 
 main b {
