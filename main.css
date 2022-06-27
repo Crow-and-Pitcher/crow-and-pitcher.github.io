@@ -1,0 +1,140 @@
+body {
+  background-color: rgba(205, 227, 255,1);
+  background: linear-gradient(0deg, rgba(205, 227, 255, 0.9) 21%, #005199 100%);
+}
+
+body, h1, h2, h3, a, p {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+}
+
+header {
+  background-image: url(assets/logo.png);
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: 20px 20px;
+  padding: 20px;
+  height: 70px;
+  text-indent: 70px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: rgba(6, 33, 72, 0.85);
+  text-transform: uppercase;
+  text-shadow: rgba(237, 237, 237, 0.4) 0.5px 0.5px 1px;
+}
+
+main {
+  height: 300px;
+  display: flex;
+}
+
+main, section {
+  margin-bottom: 30px;
+}
+
+main div, section div {
+  width: 50vw;
+  min-width: 320px;
+  padding: 20px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+main div {
+  background-color: rgba(183, 224, 255, 0.5);
+  padding-bottom: 20px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+section div {
+  width: 90vw;
+  margin: 10px auto;
+}
+
+#intro {
+  text-align: center;
+  margin-bottom: 120px;
+  color: rgb(186, 187, 187);
+  font-size: 1.3rem;
+  width: 90vw;
+  margin: 30px auto;
+  border-bottom: 1px solid rgba(67, 166, 241, 0.5);
+  padding-bottom: 30px;
+}
+
+#intro h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  width: 80vw;
+  margin: 0px auto;
+}
+
+#intro p {
+  width: 80vw;
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+#intro b {
+  font-size: 1.5rem;
+  color: rgb(237, 237, 108);
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0 0 10px 20px;
+  color: rgba(13, 17, 74, 0.487);
+  text-shadow: rgba(237, 237, 237, 0.4) 0.5px 0.5px 1px;
+}
+
+main h3 {
+  font-size: 2.5rem;
+  text-shadow: rgba(1, 1, 1, 0.25) 2px 2px 2px;
+}
+
+main h3#core {
+  color: rgba(255, 193, 87, 0.95);
+}
+
+main h3#well {
+  color: rgba(103, 255, 222, 0.95);
+}
+
+.headline {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+#about-us p {
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+footer {
+  margin-top: 50px;
+  margin-bottom: 0;
+  margin-right: 20px;
+  font-size: 0.85rem;
+  padding-top: 20px;
+  padding-bottom: 0;
+  color: rgb(89, 89, 89);
+  text-align: right;
+}
+
+@media all and (max-width: 740px) {
+  main {
+    flex-direction: column;
+  }
+
+  main div {
+    width: 90vw;
+  }
+}
