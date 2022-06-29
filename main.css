@@ -21,7 +21,16 @@ header {
   position: relative;
 }
 
-header a {
+header > a {
+  display: block;
+  width: 70px;
+  height: 70px;
+  font-size: 0rem;
+  position: absolute;
+  left: 0;
+}
+
+.toplinks a {
   color: #6B7EA4;
   display: block;
   padding: 6px;
@@ -97,6 +106,12 @@ header a {
 
 footer {
   padding: 20px;
+}
+
+footer span {
+  text-align: right;
+  display: block;
+  font-size: 0.9rem;
 }
 
 @media all and (max-width: 700px) {
