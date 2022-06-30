@@ -123,8 +123,9 @@ footer span {
     width: 120px;
   }
 
-  header a {
+  .toplinks a {
     padding: 0;
+    line-height: 1rem;
   }
 
   #top {
