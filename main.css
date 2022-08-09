@@ -16,7 +16,7 @@ header {
   background-image: url(assets/logo.png);
   background-size: 50px;
   background-repeat: no-repeat;
-  background-position: 10px 10px;
+  background-position: 20px 10px;
   height: 70px;
   position: relative;
 }
@@ -32,11 +32,11 @@ header > a {
 
 .toplinks a {
   color: #6B7EA4;
-  display: block;
   padding: 6px;
   margin-top: 10px;
   text-align: right;
   width: 100px;
+  font-size: 0.9rem;
   text-transform: uppercase;
 }
 
@@ -46,7 +46,7 @@ header > a {
 
 .toplinks {
   position: absolute;
-  right: 10px;
+  right: 50px;
 }
 
 #top {
@@ -72,14 +72,17 @@ header > a {
 
 #prop {
   background: url('assets/secondback.png') no-repeat;
+  background-position: 50%;
   margin-bottom: 50px;
   align-items: center;
   justify-content: center;
   width: 100%;
   float: left;
   clear: both;
-  margin-top: 20px;
   display: flex;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  min-width: 350px;
 }
 
 #prop h2 {
@@ -97,11 +100,12 @@ header > a {
 }
 
 #prop h2 p {
-  font-size: 12px;
+  font-size: 0.85rem;
   font-weight: normal;
   color: #111;
   margin-left: -80px;
   margin-top: 20px;
+  line-height: 1.3rem;
 }
 
 #prop1 {
@@ -122,7 +126,7 @@ header > a {
 #approach {
   background: url('assets/approach.png') no-repeat;
   background-size: 400px;
-  height: 480px;
+  min-width: 350px;
   padding: 20px;
   width: 700px;
   margin: 20px auto;
@@ -131,7 +135,6 @@ header > a {
 #approach h2 {
   text-align: left;
   padding-left: 420px;
-  font-size: 1.2rem;
   display: block;
   float: left;
   clear: both;
@@ -139,9 +142,8 @@ header > a {
 }
 
 #approach p {
-  width: 300px;
   margin-top: 20px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-transform: none;
   font-weight: normal;
   margin-bottom: 10px;
@@ -154,6 +156,7 @@ header > a {
 #team {
   padding: 30px 40px;
   background-color: #EAF3FF;
+  min-width: 350px;
 }
 
 #team div {
@@ -163,20 +166,64 @@ header > a {
 }
 
 #contact {
-  margin-top: 20px;
-  padding: 20px;
-  height: 400px;
+  padding: 40px;
+  margin: 0 auto;
+  width: 800px;
+  min-width: 350px;
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Poppins;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  width: auto;
+}
+
+textarea {
+  height: 70px;
 }
 
 footer {
-  padding: 20px;
+  padding: 20px 20px;
   background-color: #95B2E8;
+  position: relative;
+  display: flex;
 }
 
-footer span {
-  text-align: right;
+footer div {
   display: block;
   font-size: 0.9rem;
+  width: 50%;
+}
+
+footer span, footer a {
+  display: block;
+}
+
+footer #links1 span:first-child {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+footer span:last-child, footer a {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #111;
+}
+
+footer #links2 {
+  text-align: right;
 }
 
 #googleBtn {
@@ -210,18 +257,45 @@ footer span {
 }
 
 @media screen and (max-width: 800px) {
+  .toplinks {
+    background-image: url(assets/menu.png);
+    background-repeat: no-repeat;
+    background-position: 100px 15px;  
+    background-size: 40px;
+    right: 10px;
+    top: 0;
+    height: 50px;
+    position: absolute;
+  }
+
+  .toplinks > a {
+    background-color: #fff;
+    display: none;
+    background-image: url(assets/menu-item.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    text-align: left;
+    text-indent: 15px;
+    width: 100px;
+  }
+
+  .toplinks.active a {
+    display: block;
+  }
+
   #top {
     background-image: url(assets/header-sm.png);
-    background-size: 400px;
+    background-size: contain;
+    padding: 0;
+    width: auto;
     margin: 20px auto;
-
-    max-height: 700px;
+    max-height: 600px;
     height: 500px;
   }
 
   #googleBtn {
     width: 120px;
-    height: 35px;
+    height: 37px;
   }
 
   #appBtn {
@@ -232,9 +306,22 @@ footer span {
   }
 
   .download {
-    margin: 450px 40%;
+    margin: 530px 40%;
     height: 140px;
     width: 100px;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  #team h3 {
+    font-size: 1rem;
+  }
+
+  #team p {
+    margin: 5px 0;
+    font-size: 0.9rem;
   }
 
   .flex {
@@ -242,7 +329,8 @@ footer span {
   }
 
   .toplinks {
-    width: 120px;
+    width: 150px;
+    padding-top: 15px;
   }
 
   .toplinks a {
@@ -250,46 +338,60 @@ footer span {
     line-height: 1rem;
   }
 
-  #top h2 {
-    font-size: 1.6rem;
-  }
-
   #prop {
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 30px;
   }
 
   #prop h2 {
     width: 90vw;
     background-position: 20px 10px;
     background-size: 55px;
-    font-size: 1rem;
     margin-top: 10px;
     padding-left: 85px;
     padding-right: 20px;
-    height: 100px;
+    height: auto;
+    padding-bottom: 15px;
+    padding-top: 5px;
   }
 
   #prop h2 p {
     padding-left: 80px;
-    line-height: 1rem;
+    line-height: 1.3rem;
     margin-top: 5px;
   }
 
   #approach {
-    text-indent: 40vw;
-    background-size: 200px;
+    background-position: 0 500px;
+    background-size: contain;
+    height: 975px;
+    width: auto;
+    padding: 0 40px;
+    margin-bottom: 0;
+    overflow:none;
+  }
+
+  #team {
+    width: auto;
   }
 
   #approach h2 {
     padding-left: 0px;
     text-align: left;
-    text-indent: 200px;
   }
 
   #approach h2 p {
     text-indent: 0;
-    padding-left: 200px;
-    width: 250px;
+  }
+
+  #contact {
+    width: auto;
+    min-width: auto;
+  }
+
+
+  #contact input, #contact textarea {
+    width: 70vw;
   }
 }
