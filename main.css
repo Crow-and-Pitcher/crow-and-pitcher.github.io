@@ -58,6 +58,7 @@ header > a {
   max-width: 1000px;
   max-height: 300px;
   margin: 0 auto;
+  margin-bottom: 40px;
   text-align: center;
   font-size: 0.01rem;
   text-indent: -9999px;
