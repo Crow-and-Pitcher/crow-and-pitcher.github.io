@@ -13,8 +13,7 @@ a {
 }
 
 header {
-  background-image: url('assets/png/logo.png');
-  background-image: image-set('assets/logo.webp');
+  background-image: url('assets/logo.webp'), url('assets/png/logo.png');
   background-size: 50px;
   background-repeat: no-repeat;
   background-position: 20px 10px;
@@ -51,8 +50,7 @@ header > a {
 }
 
 #top {
-  background-image: url('assets/png/header.png');
-  background-image: image-set('assets/header.webp');
+  background-image: url('assets/header.webp'), url('assets/png/header.png');
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -74,16 +72,11 @@ header > a {
 }
 
 #prop {
-  background-image: url('assets/png/secondback.png') no-repeat;
-  background-image: image-set('assets/secondback.webp') no-repeat;
+  background-image: url('assets/secondback.webp'), url('assets/png/secondback.png');
   background-position: 50%;
   margin-bottom: 50px;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  float: left;
-  clear: both;
-  display: flex;
   padding-top: 30px;
   padding-bottom: 60px;
   min-width: 350px;
@@ -113,26 +106,26 @@ header > a {
 }
 
 #prop1 {
-  background-image: url('assets/png/prop1.png') no-repeat;
-  background-image: image-set('assets/prop1.webp') no-repeat;
+  background-image: url('assets/prop1.webp'), url('assets/png/prop1.png');
   background-size: 80px;
+  background-repeat: no-repeat;
 }
 
 #prop2 {
-  background-image: url('assets/png/prop2.png') no-repeat;
-  background-image: image-set('assets/prop2.webp') no-repeat;
+  background-image: url('assets/prop2.webp'), url('assets/png/prop2.png');
   background-size: 80px;
+  background-repeat: no-repeat;
 }
 
 #prop3 {
-  background-image: url('assets/png/prop3.png') no-repeat;
-  background-image: image-set('assets/prop3.webp') no-repeat;
+  background-image: url('assets/prop3.webp'), url('assets/png/prop3.png');
   background-size: 80px;
+  background-repeat: no-repeat;
 }
 
 #approach {
-  background-image: url('assets/png/approach.png') no-repeat;
-  background-image: image-set('assets/prop1.webp') no-repeat;
+  background-image: url('assets/approach.webp'), url('assets/png/approach.png');
+  background-repeat: no-repeat;
   background-size: 400px;
   min-width: 350px;
   padding: 20px;
@@ -235,15 +228,15 @@ footer #links2 {
 }
 
 #googleBtn {
-  background-image: url('assets/png/googlePlay.png') no-repeat;
-  background-image: image-set('assets/googlePlay.webp') no-repeat;
+  background-image: url('assets/googlePlay.webp'), url('assets/png/googlePlay.png');
+  background-repeat: no-repeat;
   background-size: 100%;
   width: 100px;
 }
 
 #appBtn {
-  background-image: url('assets/png/appleStore.png') no-repeat;
-  background-image: image-set('assets/appleStore.webp') no-repeat;
+  background-image: url('assets/appleStore.webp'), url('assets/png/appleStore.png');
+  background-repeat: no-repeat;
   background-size: 90%;
   width: 100px;
   margin-left: 10px;
@@ -255,7 +248,7 @@ footer #links2 {
   height: 30px;
   text-decoration: none;
   display: block;
-  background-repeat: no-repeat;
+  background-repeat:;
   float: left;
 }
 
@@ -268,8 +261,7 @@ footer #links2 {
 
 @media screen and (max-width: 800px) {
   .toplinks {
-    background-image: url('assets/png/menu.png') no-repeat;
-    background-image: image-set('assets/menu.webp') no-repeat;   
+    background-image: url('assets/menu.webp'), url('assets/png/menu.png');
     background-repeat: no-repeat;
     background-position: 100px 15px;  
     background-size: 40px;
@@ -282,9 +274,8 @@ footer #links2 {
   .toplinks > a {
     background-color: #fff;
     display: none;
-    background-image: url('assets/png/menu-item.png') no-repeat;
-    background-image: image-set('assets/menu-item.webp') no-repeat;
-    background-repeat: no-repeat;
+    background-image: url('assets/menu-item.webp'), url('assets/png/menu-item.png');
+    background-repeat:;
     background-size: 10px;
     text-align: left;
     text-indent: 15px;
@@ -296,8 +287,7 @@ footer #links2 {
   }
 
   #top {
-    background-image: url('assets/png/header-sm.png') no-repeat;
-    background-image: image-set('assets/header-sm.webp') no-repeat;
+    background-image: url('assets/header-sm.webp'), url('assets/png/header-sm.png');
     background-size: contain;
     padding: 0;
     width: auto;
@@ -407,4 +397,8 @@ footer #links2 {
   #contact input, #contact textarea {
     width: 70vw;
   }
+}
+
+#secret-h1 {
+  display: none;
 }
