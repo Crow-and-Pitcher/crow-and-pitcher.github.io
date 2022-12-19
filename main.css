@@ -13,7 +13,7 @@ a {
 }
 
 header {
-  background-image: url(assets/logo.png);
+  background-image: url(assets/logo.webp);
   background-size: 50px;
   background-repeat: no-repeat;
   background-position: 20px 10px;
@@ -50,7 +50,7 @@ header > a {
 }
 
 #top {
-  background: url('assets/header.png');
+  background: url('assets/header.webp');
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -72,7 +72,7 @@ header > a {
 }
 
 #prop {
-  background: url('assets/secondback.png') no-repeat;
+  background: url('assets/secondback.webp') no-repeat;
   background-position: 50%;
   margin-bottom: 50px;
   align-items: center;
@@ -110,22 +110,22 @@ header > a {
 }
 
 #prop1 {
-  background: url('assets/prop1.png') no-repeat;
+  background: url('assets/prop1.webp') no-repeat;
   background-size: 80px;
 }
 
 #prop2 {
-  background: url('assets/prop2.png') no-repeat;
+  background: url('assets/prop2.webp') no-repeat;
   background-size: 80px;
 }
 
 #prop3 {
-  background: url('assets/prop3.png') no-repeat;
+  background: url('assets/prop3.webp') no-repeat;
   background-size: 80px;
 }
 
 #approach {
-  background: url('assets/approach.png') no-repeat;
+  background: url('assets/approach.webp') no-repeat;
   background-size: 400px;
   min-width: 350px;
   padding: 20px;
@@ -228,13 +228,13 @@ footer #links2 {
 }
 
 #googleBtn {
-  background-image: url(assets/googlePlay.png);
+  background-image: url(assets/googlePlay.webp);
   background-size: 100%;
   width: 100px;
 }
 
 #appBtn {
-  background-image: url(assets/appleStore.png);
+  background-image: url(assets/appleStore.webp);
   background-size: 90%;
   width: 100px;
   margin-left: 10px;
@@ -259,7 +259,7 @@ footer #links2 {
 
 @media screen and (max-width: 800px) {
   .toplinks {
-    background-image: url(assets/menu.png);
+    background-image: url(assets/menu.webp);
     background-repeat: no-repeat;
     background-position: 100px 15px;  
     background-size: 40px;
@@ -272,7 +272,7 @@ footer #links2 {
   .toplinks > a {
     background-color: #fff;
     display: none;
-    background-image: url(assets/menu-item.png);
+    background-image: url(assets/menu-item.webp);
     background-repeat: no-repeat;
     background-size: 10px;
     text-align: left;
@@ -285,7 +285,7 @@ footer #links2 {
   }
 
   #top {
-    background-image: url(assets/header-sm.png);
+    background-image: url(assets/header-sm.webp);
     background-size: contain;
     padding: 0;
     width: auto;
