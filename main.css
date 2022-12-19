@@ -13,7 +13,8 @@ a {
 }
 
 header {
-  background-image: url(assets/logo.webp);
+  background-image: url('assets/png/logo.png');
+  background-image: image-set('assets/logo.webp');
   background-size: 50px;
   background-repeat: no-repeat;
   background-position: 20px 10px;
@@ -50,7 +51,8 @@ header > a {
 }
 
 #top {
-  background: url('assets/header.webp');
+  background-image: url('assets/png/header.png');
+  background-image: image-set('assets/header.webp');
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -72,7 +74,8 @@ header > a {
 }
 
 #prop {
-  background: url('assets/secondback.webp') no-repeat;
+  background-image: url('assets/png/secondback.png') no-repeat;
+  background-image: image-set('assets/secondback.webp') no-repeat;
   background-position: 50%;
   margin-bottom: 50px;
   align-items: center;
@@ -110,22 +113,26 @@ header > a {
 }
 
 #prop1 {
-  background: url('assets/prop1.webp') no-repeat;
+  background-image: url('assets/png/prop1.png') no-repeat;
+  background-image: image-set('assets/prop1.webp') no-repeat;
   background-size: 80px;
 }
 
 #prop2 {
-  background: url('assets/prop2.webp') no-repeat;
+  background-image: url('assets/png/prop2.png') no-repeat;
+  background-image: image-set('assets/prop2.webp') no-repeat;
   background-size: 80px;
 }
 
 #prop3 {
-  background: url('assets/prop3.webp') no-repeat;
+  background-image: url('assets/png/prop3.png') no-repeat;
+  background-image: image-set('assets/prop3.webp') no-repeat;
   background-size: 80px;
 }
 
 #approach {
-  background: url('assets/approach.webp') no-repeat;
+  background-image: url('assets/png/approach.png') no-repeat;
+  background-image: image-set('assets/prop1.webp') no-repeat;
   background-size: 400px;
   min-width: 350px;
   padding: 20px;
@@ -228,13 +235,15 @@ footer #links2 {
 }
 
 #googleBtn {
-  background-image: url(assets/googlePlay.webp);
+  background-image: url('assets/png/googlePlay.png') no-repeat;
+  background-image: image-set('assets/googlePlay.webp') no-repeat;
   background-size: 100%;
   width: 100px;
 }
 
 #appBtn {
-  background-image: url(assets/appleStore.webp);
+  background-image: url('assets/png/appleStore.png') no-repeat;
+  background-image: image-set('assets/appleStore.webp') no-repeat;
   background-size: 90%;
   width: 100px;
   margin-left: 10px;
@@ -259,7 +268,8 @@ footer #links2 {
 
 @media screen and (max-width: 800px) {
   .toplinks {
-    background-image: url(assets/menu.webp);
+    background-image: url('assets/png/menu.png') no-repeat;
+    background-image: image-set('assets/menu.webp') no-repeat;   
     background-repeat: no-repeat;
     background-position: 100px 15px;  
     background-size: 40px;
@@ -272,7 +282,8 @@ footer #links2 {
   .toplinks > a {
     background-color: #fff;
     display: none;
-    background-image: url(assets/menu-item.webp);
+    background-image: url('assets/png/menu-item.png') no-repeat;
+    background-image: image-set('assets/menu-item.webp') no-repeat;
     background-repeat: no-repeat;
     background-size: 10px;
     text-align: left;
@@ -285,7 +296,8 @@ footer #links2 {
   }
 
   #top {
-    background-image: url(assets/header-sm.webp);
+    background-image: url('assets/png/header-sm.png') no-repeat;
+    background-image: image-set('assets/header-sm.webp') no-repeat;
     background-size: contain;
     padding: 0;
     width: auto;
